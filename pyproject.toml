@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numberbond"
+version = "0.1.0"
+description = "数的分合：十格阵、圆点图与求部分求总数的练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "number-bond", "ten-frame", "worksheet", "printable", "svg"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+numberbond = "numberbond.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/numberbond"
+Source = "https://github.com/eastyou/numberbond"
+
+[tool.setuptools]
+packages = ["numberbond"]
